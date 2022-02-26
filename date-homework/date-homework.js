@@ -9,7 +9,7 @@ function diasParaCumpleanos(year,month,day) {
     const today = new Date();
     const cumpleanos = new Date(today.getFullYear(), month-1, day);
 
-    const timeDifference = cumpleanos.getTime() - today.getTime();
+    const timeDifference = cumpleanos - today;
 
     if(timeDifference < 0) {
         console.log('Esa fecha ya paso... le quedamos debiendo el regalito');
