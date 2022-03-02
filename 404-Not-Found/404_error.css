@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 1.25em 1.5em;
+    border-radius: 10px;
+}
+
+:root {
+    --inconsolata: 'Inconsolata', monospace;
+    --montserrat: 'Montserrat', sans-serif;
+    --space-mono: 'Space Mono', monospace;
+}
+
+.title__h3 {
+    margin-top: 0;
+    font-family: var(--inconsolata);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.08em;
+}
+
+.scarecrow {
+    max-width: 540px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.title__h1 {
+    font-family: var(--space-mono);
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 4.4rem;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.p__info {
+    font-family: var(--space-mono);
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+
+.button {
+    font-family: var(--space-mono);
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+    border: 0;
+    padding: 24px 43px;
+    background: #333333;
+}
+
+.p__signature {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
