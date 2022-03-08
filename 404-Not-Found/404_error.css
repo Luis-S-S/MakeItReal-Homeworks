@@ -5,24 +5,27 @@ body {
 }
 
 .container {
-    padding: 1.25em 0 1.25em 1.5em;
     display: flex;
     flex-direction: column;
+    padding: 1.25rem 0 1.25rem 1.5rem;
 }
 
 :root {
     --inconsolata: 'Inconsolata', monospace;
     --montserrat: 'Montserrat', sans-serif;
     --space-mono: 'Space Mono', monospace;
+    --white: #FFFFFF;
+    --gray-dark: #333333;
+    --gray: #4F4F4F;
+    --gray-light: #BDBDBD;
 }
 
 .title__h3 {
-    margin-top: 0;
     font-family: var(--inconsolata);
-    font-weight: bold;
     font-size: 1.5rem;
+    font-weight: bold;
     line-height: 1.5rem;
-    letter-spacing: -0.08em;
+    margin-top: 0;
 }
 
 .container__elements {
@@ -31,58 +34,55 @@ body {
 }
 
 .scarecrow {
+    align-self: center;
+    margin: 4rem auto;
     max-width: 540px;
     min-width: 290px;
     width: 75%;
-    margin: 4rem auto;
-    align-self: center;
 }
 
 .title__h1 {
+    color: var(--gray-dark);
     font-family: var(--space-mono);
-    font-weight: bold;
     font-size: 3rem;
+    font-weight: bold;
     line-height: 4.4rem;
-    letter-spacing: -0.035em;
-    color: #333333;
 }
 
 .p__info {
+    color: var(--gray);
     font-family: var(--space-mono);
     font-size: 1.125rem;
     line-height: 1.7rem;
-    letter-spacing: -0.035em;
-    color: #4F4F4F;
 }
 
 .button {
-    font-family: var(--space-mono);
-    font-weight: bold;
-    font-size: 0.875rem;
-    line-height: 1.3rem;
-    letter-spacing: -0.035em;
-    color: #FFFFFF;
+    background: var(--gray-dark);
     border: 0;
+    color: var(--white);
+    font-family: var(--space-mono);
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.3rem;
     margin: 4rem 0;
     padding: 24px 43px;
-    background: #333333;
 }
 
 .p__signature {
+    color: var(--gray-light);
     font-family: var(--montserrat);
-    font-weight: 500;
     font-size: 0.875rem;
+    font-weight: 500;
+    justify-content: end;
     line-height: 17px;
     text-align: center;
-    color: #BDBDBD;
-    justify-content: end;
 }
 
 @media (min-width: 768px) {
     .container__elements {
         flex-direction: row;
-        margin: 6rem 0;
         gap: 7rem;
+        margin: 6rem 0;
     }
 
     .scarecrow {
