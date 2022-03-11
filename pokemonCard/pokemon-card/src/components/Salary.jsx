@@ -1,20 +1,22 @@
 import { useState } from "react";
 
-function HandleChange(event) {
-    const {name, value} = event.target;
-    setForm({
-        ...form,
-        [name]: value
-    })
-}
 
-function HandleClick() {
-    setSalary();
-}
 
 function CalculateSalary() {
     const [salary, setSalary] = useState(0);
     const [form, setForm] = useState({});
+
+    function HandleChange(event) {
+        const {name, value} = event.target;
+        setForm({
+            ...form,
+            [name]: value
+        })
+    }
+    
+    function HandleClick() {
+        setSalary(form.rate * form.hours);
+    }
 
     return (
         <div>
@@ -26,7 +28,7 @@ function CalculateSalary() {
 
             <button onClick={HandleClick}>Calcular</button>
     
-            <h1>El salario es {salary}</h1>
+            <h1>El salario es ${salary}</h1>
         </div>
     )
 }
