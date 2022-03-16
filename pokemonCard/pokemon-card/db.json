@@ -1,0 +1,14 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "description": "Lavar loza",
+            "status": "pending" 
+        },
+        {
+            "id": 2,
+            "description": "Limpiar polvo",
+            "status": "finished"
+        }
+    ]
+}
